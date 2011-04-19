@@ -1,3 +1,32 @@
-Simple example for vaadin, shiro integration. Maven is sued as build infrastructure. Tomcat is the target running platform.
+Sample vaadin application that uses shiro as security provide. 
 
-Make sure you have declared the repositories either in settings.xml or in pom.xml.
+Maven
+====================================================================================
+- install maven 3
+- execute command: mvn clean install
+ 
+Tomcat
+====================================================================================
+- install Tomcat 7
+- deploy war
+- open in web browser the url http://localhost:8080/vaadin-shiro-simple/
+- Login with one of the following users: 
+  * admin with password admin, 
+  * demo with password demo, 
+  * view with password view
+
+Eclipse
+====================================================================================
+I used Helios JEE applications
+Recommended plugins:
+- m2e
+- m2e-extras (WTP plugin required only)
+- Vaadin eclipse plugin
+
+You can import the project as Maven->Existing Maven Projects into eclipse.
+Execute following operations:
+- Maven->Update Dependencies
+- Maven->Update Project Configuration
+- RunAs->Maven Install
+- Project->Clean
+- Run As->Run on Server
