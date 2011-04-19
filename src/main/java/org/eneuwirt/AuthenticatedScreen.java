@@ -7,13 +7,13 @@ import com.vaadin.ui.Button;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.VerticalLayout;
 
-public class UserView extends VerticalLayout
+public class AuthenticatedScreen extends VerticalLayout
 {
 	private static final long serialVersionUID = 1L;
 	private MyVaadinApplication app;
 
 
-	public UserView(MyVaadinApplication app)
+	public AuthenticatedScreen(MyVaadinApplication app)
     {
         super();
         this.app = app;
@@ -33,7 +33,7 @@ public class UserView extends VerticalLayout
         }
         
         
-        Button perm = new Button("For all with permission 'permission_2'");
+        Button perm = new Button("For all with permission 'permission_2' only");
         if(!currentUser.isPermitted("permission_2"))
         {
         	perm.setEnabled(false);

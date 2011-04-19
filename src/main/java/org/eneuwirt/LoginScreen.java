@@ -76,7 +76,7 @@ public class LoginScreen extends VerticalLayout
 				MyVaadinApplication.getInstance().login(username, password);
 
 				// Switch to the protected view
-				app.getMainWindow().setContent(new UserView(app));
+				app.getMainWindow().setContent(new AuthenticatedScreen(app));
 			}
 			catch (UnknownAccountException uae)
 			{
