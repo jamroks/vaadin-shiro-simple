@@ -1,0 +1,3 @@
+Simple example for vaadin, shiro integration. Maven is sued as build infrastructure. Tomcat is the target running platform.
+
+Make sure you have declared the repositories either in settings.xml or in pom.xml.
